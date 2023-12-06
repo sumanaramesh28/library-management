@@ -31,6 +31,7 @@ public class Author {
     @ManyToMany(mappedBy = "authors",cascade = CascadeType.ALL)
     private Set<Book> book = new HashSet<Book>();
 
+
     public Author(String name, String description) {
         this.name = name;
         this.description = description;

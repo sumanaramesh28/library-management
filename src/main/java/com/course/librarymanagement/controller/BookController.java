@@ -42,6 +42,7 @@ public class BookController {
         return "list-book";
     }
 
+
     @GetMapping("/remove-book/{id}")
     public String removeBookById(@PathVariable Long id, Model model) {
         bookService.removeBookById(id);

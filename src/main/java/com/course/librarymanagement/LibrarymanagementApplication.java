@@ -14,7 +14,9 @@ import org.springframework.context.annotation.Bean;
 public class LibrarymanagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LibrarymanagementApplication.class, args);}
+		SpringApplication.run(LibrarymanagementApplication.class, args);
+		System.out.println("Hello Book Lovers,Welcome !!");
+	}
 
 	@Bean
 	public CommandLineRunner initialCreate(BookService bookService) {
@@ -46,5 +48,7 @@ public class LibrarymanagementApplication {
 			book3.AddPublisher(publisher3);
 			bookService.createBook(book3);
 		};
+
+
 	}
 }
